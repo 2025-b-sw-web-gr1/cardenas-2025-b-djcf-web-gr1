@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo HTML Básico - Ejemplos Prácticos</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg-light: #f8fafc;
+            --text: #1e293b;
+            --code-bg: #0f172a;
+            --code-text: #e2e8f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg-light);
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .ejemplo {
+            background: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .ejemplo h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        
+        .codigo {
+            background: var(--code-bg);
+            color: var(--code-text);
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+            font-family: 'Consolas', monospace;
+            white-space: pre;
+            overflow-x: auto;
+        }
+        
+        .resultado {
+            border: 1px solid #e2e8f0;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        
+        .nota {
+            background: #fff7ed;
+            border-left: 4px solid #f97316;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        
+        button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0.5rem;
+        }
+        
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Aprendiendo HTML Básico</h1>
+            <p>Una guía práctica con ejemplos interactivos</p>
+        </header>
+
+        <div class="ejemplo">
+            <h2>1. Estructura Básica HTML</h2>
+            <p>Todo documento HTML debe comenzar con la declaración DOCTYPE y tener elementos html, head y body:</p>
+            <div class="codigo">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Título de la página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    El contenido va aquí
+&lt;/body&gt;
+&lt;/html&gt;</div>
+            <div class="nota">
+                <strong>Nota:</strong> La declaración DOCTYPE le dice al navegador que esto es un documento HTML5.
+            </div>
+        </div>
+
+        <div class="ejemplo">
+            <h2>2. Encabezados HTML</h2>
+            <p>HTML tiene seis niveles de encabezados, desde h1 (el más importante) hasta h6:</p>
+            <div class="codigo">&lt;h1&gt;Encabezado 1&lt;/h1&gt;
+&lt;h2&gt;Encabezado 2&lt;/h2&gt;
+&lt;h3&gt;Encabezado 3&lt;/h3&gt;
+&lt;h4&gt;Encabezado 4&lt;/h4&gt;
+&lt;h5&gt;Encabezado 5&lt;/h5&gt;
+&lt;h6&gt;Encabezado 6&lt;/h6&gt;</div>
+            <div class="resultado">
+                <h1>Encabezado 1</h1>
+                <h2>Encabezado 2</h2>
+                <h3>Encabezado 3</h3>
+                <h4>Encabezado 4</h4>
+                <h5>Encabezado 5</h5>
+                <h6>Encabezado 6</h6>
+            </div>
+        </div>
+
+        <div class="ejemplo">
+            <h2>3. Párrafos y Formato de Texto</h2>
+            <p>Los párrafos se definen con la etiqueta p. El formato de texto incluye b, strong, i, em, mark, small, sub, sup:</p>
+            <div class="codigo">&lt;p&gt;Este es un párrafo normal.&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;Texto en negrita&lt;/b&gt; y
+    &lt;strong&gt;texto importante&lt;/strong&gt;
+    &lt;br&gt;
+    &lt;i&gt;Texto en cursiva&lt;/i&gt; y
+    &lt;em&gt;texto enfatizado&lt;/em&gt;
+    &lt;br&gt;
+    &lt;mark&gt;Texto resaltado&lt;/mark&gt; y
+    &lt;small&gt;texto pequeño&lt;/small&gt;
+&lt;/p&gt;</div>
+            <div class="resultado">
+                <p>Este es un párrafo normal.</p>
+                <p>
+                    <b>Texto en negrita</b> y
+                    <strong>texto importante</strong>
+                    <br>
+                    <i>Texto en cursiva</i> y
+                    <em>texto enfatizado</em>
+                    <br>
+                    <mark>Texto resaltado</mark> y
+                    <small>texto pequeño</small>
+                </p>
+            </div>
+        </div>
+
+        <div class="ejemplo">
+            <h2>4. Enlaces e Imágenes</h2>
+            <p>Los enlaces se crean con la etiqueta a y las imágenes con img:</p>
+            <div class="codigo">&lt;a href="https://www.ejemplo.com"&gt;Visitar ejemplo.com&lt;/a&gt;
+&lt;br&gt;
+&lt;img src="https://via.placeholder.com/150" alt="Imagen de ejemplo" width="150" height="150"&gt;</div>
+            <div class="resultado">
+                <a href="https://www.ejemplo.com">Visitar ejemplo.com</a>
+                <br>
+                <img src="https://via.placeholder.com/150" alt="Imagen de ejemplo" width="150" height="150">
+            </div>
+            <div class="nota">
+                <strong>Importante:</strong> Siempre incluye el atributo alt en las imágenes para mejorar la accesibilidad.
+            </div>
+        </div>
+
+        <div class="ejemplo">
+            <h2>5. Listas</h2>
+            <p>HTML soporta listas ordenadas (ol) y no ordenadas (ul):</p>
+            <div class="codigo">&lt;h3&gt;Lista no ordenada:&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Café&lt;/li&gt;
+    &lt;li&gt;Té&lt;/li&gt;
+    &lt;li&gt;Leche&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Lista ordenada:&lt;/h3&gt;
+&lt;ol&gt;
+    &lt;li&gt;Primer paso&lt;/li&gt;
+    &lt;li&gt;Segundo paso&lt;/li&gt;
+    &lt;li&gt;Tercer paso&lt;/li&gt;
+&lt;/ol&gt;</div>
+            <div class="resultado">
+                <h3>Lista no ordenada:</h3>
+                <ul>
+                    <li>Café</li>
+                    <li>Té</li>
+                    <li>Leche</li>
+                </ul>
+
+                <h3>Lista ordenada:</h3>
+                <ol>
+                    <li>Primer paso</li>
+                    <li>Segundo paso</li>
+                    <li>Tercer paso</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="ejemplo">
+            <h2>6. Tablas HTML</h2>
+            <p>Las tablas se crean usando las etiquetas table, tr, th y td:</p>
+            <div class="codigo">&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Encabezado 1&lt;/th&gt;
+        &lt;th&gt;Encabezado 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Fila 1, Celda 1&lt;/td&gt;
+        &lt;td&gt;Fila 1, Celda 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Fila 2, Celda 1&lt;/td&gt;
+        &lt;td&gt;Fila 2, Celda 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</div>
+            <div class="resultado">
+                <table border="1">
+                    <tr>
+                        <th>Encabezado 1</th>
+                        <th>Encabezado 2</th>
+                    </tr>
+                    <tr>
+                        <td>Fila 1, Celda 1</td>
+                        <td>Fila 1, Celda 2</td>
+                    </tr>
+                    <tr>
+                        <td>Fila 2, Celda 1</td>
+                        <td>Fila 2, Celda 2</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="ejemplo">
+            <h2>7. Formularios HTML</h2>
+            <p>Los formularios se crean con la etiqueta form y pueden contener diferentes tipos de inputs:</p>
+            <div class="codigo">&lt;form action="/enviar" method="post"&gt;
+    &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+    &lt;input type="text" id="nombre" name="nombre"&gt;
+    &lt;br&gt;&lt;br&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    &lt;br&gt;&lt;br&gt;
+    
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;</div>
+            <div class="resultado">
+                <form action="/enviar" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <br><br>
+                    
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <div class="nota">
+                <strong>Nota:</strong> Este formulario es solo demostrativo y no enviará datos a ningún servidor.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Función para copiar el código al portapapeles
+        function copiarCodigo(elemento) {
+            const codigo = elemento.textContent;
+            navigator.clipboard.writeText(codigo)
+                .then(() => alert('Código copiado al portapapeles!'))
+                .catch(err => console.error('Error al copiar:', err));
+        }
+
+        // Añadir botones de copiar a todos los bloques de código
+        document.querySelectorAll('.codigo').forEach(elemento => {
+            const boton = document.createElement('button');
+            boton.textContent = 'Copiar código';
+            boton.onclick = () => copiarCodigo(elemento);
+            elemento.parentNode.insertBefore(boton, elemento);
+        });
+    </script>
+</body>
+</html>

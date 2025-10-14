@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HTML básico — Guía interactiva</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>HTML básico — Guía interactiva</h1>
+    <p class="lead">Pequeña página educativa con ejemplos y un editor en vivo para practicar.</p>
+  </header>
+
+  <main class="container">
+    <nav class="toc">
+      <h2>Contenido</h2>
+      <ul>
+        <li><a href="#que-es-html">¿Qué es HTML?</a></li>
+        <li><a href="#elementos-etiquetas">Elementos y etiquetas</a></li>
+        <li><a href="#elementos-html">Elementos HTML (tipos y ejemplos)</a></li>
+        <li><a href="#atributos">Atributos</a></li>
+        <li><a href="#titulos-parrafos">Títulos y párrafos</a></li>
+        <li><a href="#enlaces-imagenes">Enlaces e imágenes</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#formularios">Formularios</a></li>
+        <li><a href="#editor">Editor en vivo</a></li>
+      </ul>
+    </nav>
+
+    <section id="que-es-html">
+      <h2>¿Qué es HTML?</h2>
+      <p>HTML (HyperText Markup Language) es el lenguaje de marcado principal para crear páginas web. Define la estructura del contenido usando elementos representados por etiquetas.</p>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;...&lt;/head&gt;
+  &lt;body&gt;...&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+
+    <section id="elementos-html">
+      <h2>Elementos HTML (tipos y ejemplos)</h2>
+      <p>Un <strong>elemento</strong> HTML es la unidad básica de la página: puede ser una etiqueta de apertura y cierre, o una etiqueta auto-cerrada. Los elementos pueden clasificarse por su comportamiento y propósito:</p>
+      <ul>
+        <li><strong>Elementos de bloque</strong>: ocupan todo el ancho disponible y acostumbran a formar la estructura (por ejemplo, <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>).</li>
+        <li><strong>Elementos inline</strong>: ocupan solo el espacio necesario y suelen estar dentro de otros elementos (por ejemplo, <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;img&gt;</code>).</li>
+        <li><strong>Elementos semánticos</strong>: describen el propósito del contenido y mejoran la accesibilidad y SEO (por ejemplo, <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code>).</li>
+      </ul>
+
+      <p>Ejemplos rápidos:</p>
+      <pre><code>&lt;!-- Elemento de bloque (estructura) --&gt;
+&lt;div&gt;
+  &lt;h2&gt;Sección ejemplo&lt;/h2&gt;
+  &lt;p&gt;Párrafo dentro de un &lt;div&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;!-- Elementos inline dentro de texto --&gt;
+&lt;p&gt;Texto con &lt;strong&gt;énfasis&lt;/strong&gt; y un &lt;a href="https://example.com"&gt;enlace&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!-- Elemento semántico --&gt;
+&lt;article&gt;
+  &lt;h3&gt;Artículo interesante&lt;/h3&gt;
+  &lt;p&gt;Contenido del artículo...&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+
+      <p>Consejo: usar elementos semánticos mejora la lectura por parte de lectores de pantalla y motores de búsqueda. Si no existe un elemento semántico adecuado, <code>&lt;div&gt;</code> y <code>&lt;span&gt;</code> siguen siendo útiles como contenedores neutros.</p>
+    </section>
+
+    <section id="elementos-etiquetas">
+      <h2>Elementos y etiquetas</h2>
+      <p>Un elemento HTML normalmente tiene una etiqueta de apertura y una de cierre. Ejemplo:</p>
+      <pre><code>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</code></pre>
+      <p>Algunas etiquetas son auto-cerradas, por ejemplo la etiqueta de imagen:</p>
+      <pre><code>&lt;img src="ruta.jpg" alt="Descripción" /&gt;</code></pre>
+    </section>
+
+    <section id="atributos">
+      <h2>Atributos</h2>
+      <p>Los atributos añaden información a las etiquetas. Aparecen dentro de la etiqueta de apertura.</p>
+      <pre><code>&lt;a href="https://ejemplo.com" target="_blank"&gt;Visitar sitio&lt;/a&gt;</code></pre>
+    </section>
+
+    <section id="titulos-parrafos">
+      <h2>Títulos y párrafos</h2>
+      <p>Los títulos van de &lt;h1&gt; (más importante) a &lt;h6&gt; (menos importante). Los párrafos usan &lt;p&gt;.</p>
+      <pre><code>&lt;h1&gt;Título principal&lt;/h1&gt;
+&lt;p&gt;Un párrafo explicativo.&lt;/p&gt;</code></pre>
+    </section>
+
+    <section id="enlaces-imagenes">
+      <h2>Enlaces e imágenes</h2>
+      <p>Enlaces con &lt;a&gt; e imágenes con &lt;img&gt;:</p>
+      <pre><code>&lt;a href="https://www.example.com"&gt;Ir a example.com&lt;/a&gt;
+&lt;img src="https://via.placeholder.com/150" alt="Ejemplo" /&gt;</code></pre>
+    </section>
+
+    <section id="listas">
+      <h2>Listas</h2>
+      <p>Listas ordenadas (&lt;ol&gt;) y no ordenadas (&lt;ul&gt;):</p>
+      <pre><code>&lt;ul&gt;
+  &lt;li&gt;Elemento 1&lt;/li&gt;
+  &lt;li&gt;Elemento 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </section>
+
+    <section id="formularios">
+      <h2>Formularios</h2>
+      <p>Formularios recogen datos del usuario. Ejemplo simple:</p>
+      <pre><code>&lt;form action="/enviar" method="post"&gt;
+  &lt;label&gt;Nombre: &lt;input name="nombre" /&gt;&lt;/label&gt;
+  &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+    </section>
+
+    <section id="editor">
+      <h2>Editor en vivo</h2>
+      <p>Prueba y edita código HTML en el panel. Usa "Renderizar" para ver el resultado.</p>
+
+      <div class="editor-actions">
+        <button id="load-basic">Cargar ejemplo básico</button>
+        <button id="load-images">Cargar ejemplo con imagen y enlace</button>
+        <button id="load-headings">Cargar ejemplo: Encabezados</button>
+        <button id="render">Renderizar</button>
+      </div>
+
+      <div class="editor-grid">
+        <textarea id="html-input" aria-label="Editor de HTML">&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"/&gt;
+    &lt;title&gt;Ejemplo&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hola, mundo&lt;/h1&gt;
+    &lt;p&gt;Edita este HTML y pulsa "Renderizar".&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</textarea>
+
+        <iframe id="preview" sandbox="allow-scripts allow-same-origin"></iframe>
+      </div>
+
+      <p class="note">Consejo: los cambios no se guardan automáticamente; copia tu código si lo necesitas.</p>
+    </section>
+
+    <footer class="footnote">
+      <p>Contenidos inspirados en: <a href="https://www.w3schools.com/html/html_basic.asp" target="_blank">W3Schools — HTML basic</a></p>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
