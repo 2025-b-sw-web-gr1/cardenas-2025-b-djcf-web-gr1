@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SPA: Gatitos y Perros</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Adopta Amor</h1>
+      <nav class="nav">
+        <a href="#/" data-link>Inicio</a>
+        <a href="#/gatos" data-link>Gatitos</a>
+        <a href="#/perros" data-link>Perros</a>
+      </nav>
+    </header>
+
+    <main id="app" class="container" aria-live="polite"></main>
+
+    <footer class="site-footer">
+      <small>SPA minimal con rutas por hash (#/gatos y #/perros)</small>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+  </html>
