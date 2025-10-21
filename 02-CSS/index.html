@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>02-CSS — Formas de cargar estilos en la web</title>
+
+    <!-- 1) Hoja de estilos externa (HTTP request) -->
+    <link rel="stylesheet" href="css/base.css" />
+
+    <!-- 2) Hoja para impresión (media=print) -->
+    <link rel="stylesheet" href="css/print.css" media="print" />
+
+    <!-- 3) Preload + swap (carga adelantada, luego activar como stylesheet) -->
+    <link rel="preload" as="style" href="css/preload.css" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="css/preload.css" /></noscript>
+
+    <!-- 4) Estilos internos con @import (menos recomendado por bloqueo) -->
+    <style>
+      /* Importa otra hoja desde un <style>. Suele bloquear el render. */
+      @import url('css/imported-from-style.css');
+
+      /* Reglas internas simples */
+      :root {
+        --brand: #0066ee;
+      }
+      .badge { padding: .2rem .5rem; border-radius: .5rem; background: var(--brand); color: #fff; font-weight: 600; }
+      .internal-style-demo { border: 2px dashed var(--brand); padding: .75rem; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Formas de cargar estilos CSS</h1>
+      <p class="subtitle">Demostración educativa de distintas técnicas de carga de CSS</p>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>1) Estilo en línea (inline)</h2>
+        <p>Aplicar CSS directamente con el atributo <code>style</code> en un elemento.</p>
+        <div class="demo-area">
+          <button style="background:#10b981;color:white;border:none;padding:.6rem 1rem;border-radius:.5rem">Botón con style="..."</button>
+        </div>
+        <ul class="pros-cons">
+          <li><span class="badge">+</span> Muy rápido para pruebas o casos puntuales</li>
+          <li><span class="badge">-</span> Difícil de mantener y de reusar</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>2) Estilos internos con &lt;style&gt;</h2>
+        <p>Definir reglas CSS en el documento. Este bloque también importa otra hoja con <code>@import</code>.</p>
+        <div class="demo-area internal-style-demo">
+          Caja con borde y <code>@import</code> aplicado desde &lt;style&gt;.
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>3) Hoja externa con &lt;link rel="stylesheet"&gt;</h2>
+        <p>La forma más común en producción. Genera una petición HTTP a <code>css/base.css</code>. Esta hoja a su vez usa <code>@import</code> interno para más reglas.</p>
+        <div class="demo-area">
+          <div class="pill pill-success">.pill desde base.css</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>4) Media queries por archivo (media="print")</h2>
+        <p>La hoja <code>print.css</code> solo aplica al imprimir. Abre la vista de impresión del navegador para ver cambios.</p>
+        <div class="demo-area">
+          <p class="print-hint">Este párrafo cambia de estilo al imprimir.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>5) Preload + swap</h2>
+        <p>Se precarga <code>preload.css</code> y al terminar se cambia su <code>rel</code> a <code>stylesheet</code> para evitar el bloqueo del render.</p>
+        <div class="demo-area">
+          <div class="tag tag-preload">Etiqueta con estilo desde preload.css</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>6) Carga dinámica con JavaScript</h2>
+        <p>Podemos inyectar un &lt;link&gt; en tiempo de ejecución (por ejemplo, un tema oscuro).</p>
+        <div class="demo-area">
+          <button id="load-dark" class="btn">Cargar tema oscuro (JS)</button>
+          <button id="remove-dark" class="btn btn-outline">Quitar tema oscuro</button>
+        </div>
+        <p>También podemos traer el CSS como texto y colocarlo dentro de un &lt;style&gt;:</p>
+        <div class="demo-area">
+          <button id="inject-as-text" class="btn">Inyectar CSS como texto</button>
+          <span class="js-injected-example">Soy un elemento objetivo para el CSS inyectado.</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>7) Buenas prácticas rápidas</h2>
+        <ul>
+          <li>Prefiere hojas externas con <code>&lt;link&gt;</code> para reuso y caché.</li>
+          <li>Evita <code>@import</code> en producción en favor de agrupar/empacar.</li>
+          <li>Usa <code>media</code> para cargas condicionales (print, screen, prefers-color-scheme).</li>
+          <li>Considera <code>preload</code> para CSS crítico no-bloqueante.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <small>Servidor local: http-server (Node.js). Revisa el README para ejecutarlo.</small>
+    </footer>
+
+    <script src="js/loader.js"></script>
+  </body>
+  </html>

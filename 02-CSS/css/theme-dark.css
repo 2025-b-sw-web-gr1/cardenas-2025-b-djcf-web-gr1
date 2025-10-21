@@ -1,0 +1,7 @@
+/* Tema oscuro cargado dinámicamente por JS */
+
+html, body { background: #0b1220 !important; color: #e2e8f0 !important; }
+.card { background:#0f172a !important; border-color:#1f2937 !important; }
+.site-header { background: linear-gradient(90deg, #111827, #0b1220) !important; }
+.btn { background:#334155 !important; }
+.btn.btn-outline { color:#cbd5e1 !important; border-color:#334155 !important; }

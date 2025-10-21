@@ -1,0 +1,10 @@
+/* print.css: solo aplica al imprimir (media="print"). */
+
+@page { margin: 12mm; }
+
+/* Simplifica colores y sombras para impresión */
+body { background: #fff !important; color: #000 !important; }
+.card { box-shadow: none !important; border-color: #999 !important; }
+.site-header, .site-footer { background: #fff !important; color: #000 !important; }
+
+.print-hint { border:1px dashed #555; background: #fff; }

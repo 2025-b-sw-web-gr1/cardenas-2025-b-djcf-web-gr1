@@ -1,0 +1,3 @@
+/* Hoja que será descargada como texto y luego inyectada en un <style> por JS */
+
+.js-injected-example { background:#dcfce7; color:#065f46; padding:.2rem .4rem; border-radius:.35rem; }

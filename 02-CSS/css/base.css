@@ -1,0 +1,33 @@
+/* base.css: hoja principal cargada con <link>. */
+
+@import url('imported.css'); /* 3.1) También demostramos @import dentro de un CSS */
+
+/* Reset mínimo */
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.5; color: #0f172a; background:#f8fafc; }
+
+.site-header { padding: 2rem 1rem; background: linear-gradient(90deg, #0ea5e9, #6366f1); color: #fff; }
+.site-header h1 { margin: 0 0 .25rem; font-size: clamp(1.5rem, 2.8vw, 2.2rem); }
+.site-header .subtitle { margin: 0; opacity:.9 }
+
+.container { max-width: 1000px; margin: 1.5rem auto; padding: 0 1rem; display: grid; gap: 1rem; }
+.card { background: #fff; border:1px solid #e2e8f0; border-radius: .75rem; padding: 1rem; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+.card h2 { margin-top: 0; font-size: 1.25rem; }
+.demo-area { display:flex; align-items:center; gap:.75rem; flex-wrap: wrap; padding:.5rem 0 }
+.pros-cons { margin:.5rem 0 0 0; padding-left: 1rem; }
+
+.pill { display:inline-block; padding:.35rem .65rem; border-radius:999px; font-weight:600; }
+.pill-success { background:#22c55e; color:#052e14; }
+
+.tag { display:inline-block; padding:.2rem .5rem; border-radius:.35rem; background:#e2e8f0; color:#0f172a; font-size:.9rem; }
+.tag-preload { background:#fde68a; color:#92400e; }
+
+.btn { background:#0ea5e9; color:#fff; border:none; padding:.55rem .9rem; border-radius:.5rem; cursor:pointer; }
+.btn:hover { filter: brightness(0.95); }
+.btn:active { transform: translateY(1px); }
+.btn.btn-outline { background: transparent; color:#0ea5e9; border:1px solid #0ea5e9; }
+
+.print-hint { background:#eef2ff; padding:.5rem; border-radius:.5rem; }
+
+.site-footer { padding: 2rem 1rem; text-align:center; color:#475569; }

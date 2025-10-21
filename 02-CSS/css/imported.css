@@ -1,0 +1,6 @@
+/* imported.css: reglas traídas vía @import desde base.css */
+
+.from-import { color:#334155; background:#bae6fd; padding:.25rem .5rem; border-radius:.35rem; }
+
+/* Ejemplo de clase que aplicaremos a body para una pequeña variación */
+body.imported-tweaks .card { border-color:#cbd5e1; }
