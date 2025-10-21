@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SolCare · SPA</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Demostración SPA de SolCare: navega entre marcas de bloqueador solar sin recargar la página." />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="#/marca1" class="brand" aria-label="Inicio">
+        <span class="logo">☀</span>
+        <span>SolCare</span>
+      </a>
+      <div class="nav-links" role="navigation" aria-label="Navegación principal">
+        <a href="#/marca1" class="nav-link" data-route>Marca 1</a>
+        <a href="#/marca2" class="nav-link" data-route>Marca 2</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema" aria-pressed="false" title="Tema oscuro">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="app" class="container" aria-live="polite">
+    <noscript>
+      <div class="card">
+        <h2>Se requiere JavaScript</h2>
+        <p>Para ver la demo SPA sin recargas, habilita JavaScript o visita la versión clásica en <a class="nav-link" href="index.html">index.html</a>.</p>
+      </div>
+    </noscript>
+  </main>
+
+  <script src="spa.js"></script>
+</body>
+</html>
+

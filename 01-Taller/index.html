@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloqueador Solar - Marca 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="brand" aria-label="Inicio">
+                <span class="logo">☀</span>
+                <span>SolCare</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Marca 1</a>
+                <a href="marca2.html" class="nav-link">Marca 2</a>
+                <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema" aria-pressed="false" title="Tema oscuro">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <div class="copy">
+                <h1>Bloqueador Solar Marca 1</h1>
+                <p class="lead">Descubre la protección avanzada de la Marca 1 con ingredientes naturales y fórmula resistente al agua. Ideal para todo tipo de piel.</p>
+                <div class="actions">
+                    <a class="btn btn-primary" href="#comprar">Comprar ahora</a>
+                    <a class="btn btn-ghost" href="#detalles">Ver detalles</a>
+                </div>
+                <div class="features">
+                    <div class="feature">
+                        <div class="icon">🛡️</div>
+                        <div>
+                            <h3>Protección SPF 50+</h3>
+                            <p>Amplio espectro contra rayos UVA/UVB para tu día a día.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="icon">💧</div>
+                        <div>
+                            <h3>Resistente al agua</h3>
+                            <p>Ideal para actividades al aire libre y deportes.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="icon">🌿</div>
+                        <div>
+                            <h3>Ingredientes naturales</h3>
+                            <p>Suave con tu piel, libre de parabenos y fragancias fuertes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Bloqueador Solar Marca 1" class="product-img">
+            </div>
+        </section>
+
+        <!-- Nuevas secciones de ancla -->
+        <section id="detalles" class="card" aria-labelledby="detalles-title">
+            <h2 id="detalles-title">Detalles del producto</h2>
+            <p>
+                Fórmula hipoalergénica con antioxidantes y filtros de última generación. Protección inmediata, no comedogénica y apta para rostro y cuerpo.
+            </p>
+        </section>
+
+        <section id="comprar" class="card" aria-labelledby="comprar-title">
+            <h2 id="comprar-title">Compra segura</h2>
+            <p>Precio promocional por lanzamiento y envíos a todo el país.</p>
+            <a class="btn btn-primary" href="#" role="button">Añadir al carrito</a>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
