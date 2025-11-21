@@ -1,0 +1,1335 @@
+
+@font-face {
+    font-family: TiemposHeadlineWeb;
+    src: url(https://s.ltrbxd.com/fonts/TiemposHeadlineWeb-Bold.eot);
+    src: url(https://s.ltrbxd.com/fonts/TiemposHeadlineWeb-Bold.eot?#iefix) format("embedded-opentype"),url(https://s.ltrbxd.com/fonts/TiemposHeadlineWeb-Bold.woff2) format("woff2"),url(https://s.ltrbxd.com/fonts/TiemposHeadlineWeb-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: TiemposHeadlineWeb;
+    src: url(https://s.ltrbxd.com/fonts/TiemposHeadlineWeb-BoldItalic.eot);
+    src: url(https://s.ltrbxd.com/fonts/TiemposHeadlineWeb-BoldItalic.eot?#iefix) format("embedded-opentype"),url(https://s.ltrbxd.com/fonts/TiemposHeadlineWeb-BoldItalic.woff2) format("woff2"),url(https://s.ltrbxd.com/fonts/TiemposHeadlineWeb-BoldItalic.woff) format("woff");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: TiemposTextWeb;
+    src: url(https://s.ltrbxd.com/fonts/TiemposTextWeb-Regular.eot);
+    src: url(https://s.ltrbxd.com/fonts/TiemposTextWeb-Regular.eot?#iefix) format("embedded-opentype"),url(https://s.ltrbxd.com/fonts/TiemposTextWeb-Regular.woff2) format("woff2"),url(https://s.ltrbxd.com/fonts/TiemposTextWeb-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: TiemposTextWeb;
+    src: url(https://s.ltrbxd.com/fonts/TiemposTextWeb-RegularItalic.eot);
+    src: url(https://s.ltrbxd.com/fonts/TiemposTextWeb-RegularItalic.eot?#iefix) format("embedded-opentype"),url(https://s.ltrbxd.com/fonts/TiemposTextWeb-RegularItalic.woff2) format("woff2"),url(https://s.ltrbxd.com/fonts/TiemposTextWeb-RegularItalic.woff) format("woff");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: TiemposTextWeb;
+    src: url(https://s.ltrbxd.com/fonts/TiemposTextWeb-Semibold.eot);
+    src: url(https://s.ltrbxd.com/fonts/TiemposTextWeb-Semibold.eot?#iefix) format("embedded-opentype"),url(https://s.ltrbxd.com/fonts/TiemposTextWeb-Semibold.woff2) format("woff2"),url(https://s.ltrbxd.com/fonts/TiemposTextWeb-Semibold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: TiemposTextWeb;
+    src: url(https://s.ltrbxd.com/fonts/TiemposTextWeb-SemiboldItalic.eot);
+    src: url(https://s.ltrbxd.com/fonts/TiemposTextWeb-SemiboldItalic.eot?#iefix) format("embedded-opentype"),url(https://s.ltrbxd.com/fonts/TiemposTextWeb-SemiboldItalic.woff2) format("woff2"),url(https://s.ltrbxd.com/fonts/TiemposTextWeb-SemiboldItalic.woff) format("woff");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: GraphikWeb;
+    src: url(https://s.ltrbxd.com/fonts/Graphik-Light-Web.eot);
+    src: url(https://s.ltrbxd.com/fonts/Graphik-Light-Web.eot?#iefix) format("embedded-opentype"),url(https://s.ltrbxd.com/fonts/Graphik-Light-Web.woff) format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: GraphikWeb;
+    src: url(https://s.ltrbxd.com/fonts/Graphik-Regular-Web.eot);
+    src: url(https://s.ltrbxd.com/fonts/Graphik-Regular-Web.eot?#iefix) format("embedded-opentype"),url(https://s.ltrbxd.com/fonts/Graphik-Regular-Web.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: GraphikWeb;
+    src: url(https://s.ltrbxd.com/fonts/Graphik-RegularItalic-Web.eot);
+    src: url(https://s.ltrbxd.com/fonts/Graphik-RegularItalic-Web.eot?#iefix) format("embedded-opentype"),url(https://s.ltrbxd.com/fonts/Graphik-RegularItalic-Web.woff) format("woff");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: GraphikWeb;
+    src: url(https://s.ltrbxd.com/fonts/Graphik-Semibold-Web.eot);
+    src: url(https://s.ltrbxd.com/fonts/Graphik-Semibold-Web.eot?#iefix) format("embedded-opentype"),url(https://s.ltrbxd.com/fonts/Graphik-Semibold-Web.woff) format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: GraphikWeb;
+    src: url(https://s.ltrbxd.com/fonts/Graphik-SemiboldItalic-Web.eot);
+    src: url(https://s.ltrbxd.com/fonts/Graphik-SemiboldItalic-Web.eot?#iefix) format("embedded-opentype"),url(https://s.ltrbxd.com/fonts/Graphik-SemiboldItalic-Web.woff) format("woff");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: GraphikWeb;
+    src: url(https://s.ltrbxd.com/fonts/Graphik-Bold-Web.eot);
+    src: url(https://s.ltrbxd.com/fonts/Graphik-Bold-Web.eot?#iefix) format("embedded-opentype"),url(https://s.ltrbxd.com/fonts/Graphik-Bold-Web.woff) format("woff");
+    font-weight: 800;
+    font-style: normal
+}
+
+@font-face {
+    font-family: GraphikWeb;
+    src: url(https://s.ltrbxd.com/fonts/Graphik-BoldItalic-Web.woff2) format("woff2"),url(https://s.ltrbxd.com/fonts/Graphik-BoldItalic-Web.woff) format("woff");
+    font-weight: 800;
+    font-style: italic
+}
+
+@font-face {
+    font-family: GraphikWeb;
+    src: url(https://s.ltrbxd.com/fonts/Graphik-Black-Web.woff2) format("woff2"),url(https://s.ltrbxd.com/fonts/Graphik-Black-Web.woff) format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: GraphikWeb;
+    src: url(https://s.ltrbxd.com/fonts/Graphik-BlackItalic-Web.woff2) format("woff2"),url(https://s.ltrbxd.com/fonts/Graphik-BlackItalic-Web.woff) format("woff");
+    font-weight: 900;
+    font-style: italic
+}
+
+@font-face {
+    font-family: PitchSansWeb;
+    src: url(https://s.ltrbxd.com/fonts/PitchSansWeb-Medium.eot);
+    src: url(https://s.ltrbxd.com/fonts/PitchSansWeb-Medium.eot?#iefix) format("embedded-opentype"),url(https://s.ltrbxd.com/fonts/PitchSansWeb-Medium.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: PitchSansWeb;
+    src: url(https://s.ltrbxd.com/fonts/PitchSansWeb-MediumItalic.eot);
+    src: url(https://s.ltrbxd.com/fonts/PitchSansWeb-MediumItalic.eot?#iefix) format("embedded-opentype"),url(https://s.ltrbxd.com/fonts/PitchSansWeb-MediumItalic.woff) format("woff");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: ColorEmoji;
+    src: local("Apple Color Emoji"),local("Segoe UI Emoji"),local("Segoe UI Symbol"),local("Noto Color Emoji")
+}
+
+.site-header section {
+    width: 950px;
+    height: 72px;
+    margin: 0 auto;
+    position: relative;
+}
+section, article, header, footer, nav, aside {
+    display: block;
+}
+.no-mobile .backdropped .site-header .site-logo:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 0;
+}
+    .poster-grid .grid {
+        display: grid !important;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important; /* igual ancho base que popular-with-friends */
+        gap: 18px; /* mismo espacio que otras secciones */
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        grid-auto-flow: row dense;
+    }
+
+    /* Asegurar proporción y ancho de imagen en MIX FEST */
+    .poster-grid .poster img.image {
+        width: 100%;
+        aspect-ratio: var(--poster-aspect-ratio, 2/3);
+        height: auto;
+        object-fit: cover;
+    }
+.site-header .site-logo.-parasite>.parasite-dot {
+    width: 57px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-size: 62px 70px;
+    background-position: 0 0;
+    z-index: 2
+}
+
+
+.site-header p {
+    margin: 0
+}
+
+.site-header section {
+    width: 950px;
+    height: 72px;
+    margin: 0 auto;
+    position: relative
+}
+
+.site-header.-searchopen .button-add,.site-header.-searchopen .add-menu-wrapper {
+    opacity: 0
+}
+
+.no-mobile .site-header.-searchopen .button-add,.no-mobile .site-header.-searchopen .add-menu-wrapper {
+    transition: opacity 0s;
+    transition-delay: 0s
+}
+
+.no-mobile .site-header.-searchopen .main-nav {
+    right: 155px
+}
+
+a {
+    color: #678;
+    text-decoration: none;
+}
+.site-logo>.logo {
+    display: block;
+    width: var(--width);
+    height: var(--height);
+    background: url(https://s.ltrbxd.com/static/img/sprite-DzUy8pgb.svg) no-repeat;
+    background-size: 500px 1000px;
+    background-position-x: var(--background-position-x);
+    background-position-y: var(--background-position-y);
+    transition: width .3s cubic-bezier(.165,.84,.44,1),height .3s cubic-bezier(.165,.84,.44,1)
+}
+
+.no-mobile .site-logo>.logo {
+    --width: 273px;
+    --height: 25px;
+    --background-position-x: -350px
+}
+.no-mobile .warawara-logo .site-logo>.logo {
+    --offset-y: -3px;
+    --width: 230px;
+    --height: 30px;
+    --background-image: url(https://s.ltrbxd.com/static/img/sprite-DzUy8pgb.svg);
+    --background-size-width: var(--width);
+    --background-size-height: var(--height);
+    --background-position-x: 0;
+    --background-position-y: 0
+}
+
+.mobile .site-logo>.logo {
+    --height: 40px;
+    --width: 62px;
+    --background-position-y: -800px
+}
+.replace, .ir {
+    display: block;
+    background: url(https://s.ltrbxd.com/static/img/sprite-DzUy8pgb.svg) no-repeat;
+    background-size: 800px 1020px;
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* 1. La variable CSS que encontraste en :root.
+  ¡Excelente hallazgo!
+*/
+:root {
+    --site-header-height: 72px;
+    /* Añadamos los colores oscuros que vimos */
+    --color-background: #14181C; /* Fondo principal muy oscuro */
+    --color-header-bg: #12161A;  /* Fondo del header (ligeramente más claro) */
+    --color-text: #9ab;         /* Texto gris-azulado */
+    --color-text-light: #fff;   /* Texto blanco (para logo/títulos) */
+    --color-border: #444;       /* Bordes */
+    --poster-aspect-ratio: 2 / 3;
+    --poster-border-radius: 3px;
+    --panel-content: rgb(142, 159, 177); /* Color de texto pálido */
+    --panel-content-link: #def; /* Color de links */
+    /* figure frame values */
+    --figure-frame-border-width: 1px;
+    --figure-frame-color-rgb: 255,255,255;
+    --figure-frame-color-alpha: .08;
+    --poster-background-color: #0f1216;
+    --poster-shadow-tint: 0,0,0;
+    --poster-shadow-radius-a: 0;
+    --poster-shadow-radius-b: 4px;
+    --poster-border-radius-small: 3px;
+    --poster-border-radius-large: 8px;
+    --attribution-bg: #2c3440; /* franja gris bajo el póster */
+    --attribution-text: #dfe6eb; /* texto claro en la franja */
+    --attribution-block-adjacent-block-margin: .76923077rem;
+}
+
+/* Reseteo básico y estilos del body */
+body {
+    margin: 0;
+    font-family: GraphikWeb, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', Meiryo, sans-serif, ColorEmoji;
+    background: #14181c url(https://s.ltrbxd.com/static/img/content-bg-CFRqxbz-.png) 0 -1px repeat-x;
+
+}
+/* 2. El estilo del .site-header que inspeccionaste
+*/
+.site-header {
+    background-color: var(--color-header-bg);
+}
+
+.header-inner {
+    height: var(--site-header-height);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-left,
+.header-right { display: flex; align-items: center; gap: 16px; }
+
+.profile-link {
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    height: var(--site-header-height);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6px;
+    display: flex;
+    padding-top: 6px;
+    font-family: GraphikWeb, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', Meiryo, sans-serif, ColorEmoji;
+    color: #99AABB;
+    font-weight: 700;
+    letter-spacing: .02em;
+}
+
+.search-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px; height: 34px;
+    border-radius: 6px;
+    border: 1px solid #2a2f36;
+    background: #0f1216;
+    color: #9ab;
+    cursor: pointer;
+}
+menu-wrapper {
+    transition: opacity .3s cubic-bezier(.165, .84, .44, 1);
+    transition-delay: .2s;
+}
+.btn-log {
+    color: #f4fcf0;
+    cursor: pointer;
+    background: #00ac1c;
+    box-shadow: inset 0 1px rgba(255, 255, 255, .3);
+    z-index: 1220;
+    padding: 8px 14px;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-family: GraphikWeb, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', Meiryo, sans-serif, ColorEmoji;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .075em;
+}
+.btn-log.toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-shadow: 0;
+    border-bottom: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: rgba(85, 221, 102, .25);
+}
+
+.no-mobile .easter-egg-anora-logo:not(.warawara-logo):not(.deadpool-logo):not(.napoleon-logo):not(.slimed-me):not(.tar-logo) .site-logo>.logo {
+    --offset-y: -13px;
+    --offset-x: -3px;
+    --background-size-width: var(--width);
+    --background-size-height: var(--height);
+    --background-position-x: 0;
+    --background-position-y: 0
+}
+/* 4. Estilos para los hijos del header */
+.site-logo a {
+    /* (usaremos Tiempos para el logo) */
+    position: relative;
+    z-index: 1;
+    margin-top: var(--offset-y);
+    margin-left: var(--offset-x);
+    width: var(--width);
+    height: var(--height);
+    background-image: var(--background-image, url(https://s.ltrbxd.com/static/img/sprite-DzUy8pgb.svg));
+    background-size: var(--background-size-width, auto), var(--background-size-height, auto);
+    background-position: var(--background-position-x, 0) var(--background-position-y, 0);
+    background-repeat: no-repeat;
+    font-family: GraphikWeb, -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif, ColorEmoji;
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Hacemos que la lista de navegación también sea un flexbox */
+.main-nav ul {
+    display: flex;
+    list-style: none; /* Quita los puntos */
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Espacio entre cada link */
+}
+.no-mobile .site-header .main-nav {
+    transition: right .3s cubic-bezier(.165, .84, .44, 1);
+}
+.site-header .main-nav {
+
+    right: 110px;
+    top: px;
+}
+.main-nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-family:GraphikWeb, -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif, ColorEmoji;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Hacemos que las acciones también sean un flexbox */
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+/* 2. Estilos para el contenedor de la página */
+.main-content {
+    /* Damos espacio a los lados, como en la web original */
+    padding: 0 20px;
+    max-width: 1200px; /* Limitamos el ancho */
+    margin: 0 auto; /* Centramos el contenido */
+}
+.site-body {
+    background: #14181c url(https://s.ltrbxd.com/static/img/content-bg-CFRqxbz-.png) 0 -1px repeat-x;
+    padding-block-start: var(--site-body-padding-block-start, var(2.30769231rem));
+    padding-block-end: var(--site-body-padding-block-end, var(2.30769231rem));
+    padding-inline: 0 20px;
+    max-width: 1200px; /* Limitamos el ancho */
+    margin: 0 auto; /* Centramos el contenido */
+
+    
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+/* 3. Estilos de la sección (basado en tu inspección) */
+.section {
+    /* El padding-bottom que encontraste */
+    padding: 20px 0 2.46153846rem;
+    position: relative;
+}
+
+.welcome-title {
+    padding-block-start: var(--site-body-padding-block-start, 2.30769231rem);
+    margin: 28px 0 18px;
+    overflow-wrap: break-word;
+    font-family: GraphikWeb, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', Meiryo, sans-serif, ColorEmoji;
+    font-size: 2rem;
+    line-height: 1.23076923;
+    color: #abc;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 0 0.46153846rem;
+}
+
+.welcome-title .username { color: #cde7ff; text-decoration: underline; }
+
+/* 4. Título de la sección (¡Usando FLEXBOX!) */
+.section-header {
+    margin-bottom: 10px;
+}
+.section-heading:not(.-omitdivider) {
+    --divider-thickness: 1px;
+    --divider-color: rgba(var(--block-divider-color-rgb), 1);
+    --divider-padding-block: .38461538rem;
+    padding-block-end: var(--divider-padding-block);
+    border-block-end: var(--divider-thickness, 0) solid #445566;
+}
+.section-heading {
+    --margin-block-end: .76923077rem;
+    margin-block-start: initial;
+    margin-block-end: var(--margin-block-end);
+    --content-color: #9ab;
+    color: var(--content-color, currentColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    font-family: GraphikWeb, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', Meiryo, sans-serif, ColorEmoji;
+}
+/* Ensure the All Activity link stays inside the heading flow */
+.section-heading .all-link { position: static; margin-left: auto; font-family: inherit; }
+/* Ensure the inline span uses the Graphik stack */
+.section-heading span { font-family: inherit; }
+
+.all-link:not(.-normalflow).has-icon {
+    position: absolute;
+    top: 0
+}
+
+.mobile .all-link:not(.-normalflow).has-icon {
+    top: 0
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .all-link.has-icon:-moz-any-link:hover {
+        --content-color: #bcd
+    }
+
+    .all-link.has-icon:any-link:hover {
+        --content-color: #bcd
+    }
+}
+.all-link-group a:any-link, .all-link:any-link, .all-link a:any-link {
+    color: var(--content-color, currentColor);
+}
+a.has-icon, span.has-icon {
+    display: inline-block;
+}
+.icon-16, .icon-14, .icon-placeholder, p .icon-16, p .icon-14 {
+    display: inline-block;
+    padding-left: 20px;
+    line-height: 16px;
+    color: #678;
+    text-decoration: none;
+}
+.all-link-group a, .all-link, .all-link a {
+    text-transform: uppercase;
+    --letter-spacing: .075em;
+    letter-spacing: var(--letter-spacing);
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+.all-link.icon-activity {
+    padding-left: 15px
+}
+
+.all-link.icon-diary .icon {
+    top: -1px
+}
+/* Default absolute positioning disabled when used inside headings */
+.all-link:not(.-normalflow) {
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+.section-heading .all-link:not(.-normalflow) { position: static; top: auto; right: auto; }
+.all-link {
+    color: var(--panel-content); /* Color grisáceo */
+    text-decoration: none;
+    font-size: 12px;
+    display: inline-flex; align-items: center; gap: 6px;
+}
+
+/* 5. Lista de pósters (¡Usando GRID!) */
+.poster-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 18px;
+}
+
+/* .poster-item: grid children without specific overrides */
+
+/* 6. El póster y el avatar */
+.poster { position: relative; background: var(--poster-background-color); box-shadow: 0 1px var(--poster-shadow-radius-a) rgba(var(--poster-shadow-tint), .25), 0 1px var(--poster-shadow-radius-b) rgba(var(--poster-shadow-tint), .35); }
+.poster { --poster-border-radius-base: 4px; --poster-border-radius-base-width: 150px; --poster-border-radius-horizontal-ratio: .02666667; --poster-border-radius-horizontal-percent: calc(100% * var(--poster-border-radius-horizontal-ratio)); --poster-border-radius-vertical-ratio: calc(var(--poster-border-radius-horizontal-ratio) * (var(--poster-aspect-ratio))); --poster-border-radius-vertical-percent: calc(100% * var(--poster-border-radius-vertical-ratio)); --poster-border-radius-clamped: clamp(var(--poster-border-radius-small), var(--poster-border-radius-horizontal-percent), var(--poster-border-radius-large)) / clamp(var(--poster-border-radius-small), var(--poster-border-radius-vertical-percent), var(--poster-border-radius-large)); }
+.poster.-attributed { --attribution-block-height: 28px; --attribution-surface-color: #456; --poster-border-radius-vertical-ratio: .01581028; padding-block-end: var(--attribution-block-height); }
+
+.poster img {
+    width: 100%;
+    display: block;
+    aspect-ratio: var(--poster-aspect-ratio);
+    border-top-left-radius: var(--poster-border-radius);
+    border-top-right-radius: var(--poster-border-radius);
+    object-fit: cover;
+}
+
+.poster .frame {
+    display: block;
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 100%;
+    white-space: nowrap;
+    text-indent: 110%;
+    overflow: hidden;
+    -webkit-transition: -webkit-box-shadow .1s ease-in;
+    transition: box-shadow .1s ease-in;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 var(--figure-frame-border-width) rgba(var(--figure-frame-color-rgb), var(--figure-frame-color-alpha));
+    border-radius: var(--poster-border-radius-clamped);
+    z-index: 2;
+}
+.poster .overlay { position: absolute; inset: 0; border-top-left-radius: var(--poster-border-radius-clamped); border-top-right-radius: var(--poster-border-radius-clamped); background: linear-gradient(0deg, rgba(0,0,0,.75) 0%, rgba(0,0,0,.35) 35%, rgba(0,0,0,0) 65%); opacity: 0; transition: opacity .25s ease; z-index: 0; }
+.poster .overlay-actions { position: absolute; left: 50%; bottom: calc(var(--attribution-block-height, 28px) + 12px); display: flex; gap: 10px; opacity: 0; transform: translate(-50%,6px); transition: opacity .25s ease, transform .25s ease; z-index: 3; }
+.poster:hover .overlay, .poster:focus-within .overlay { opacity: 1; }
+.poster:hover .overlay-actions, .poster:focus-within .overlay-actions { opacity: 1; transform: translate(-50%,0); }
+
+.icon-btn { 
+    width: 36px; height: 28px; 
+    display: inline-flex; align-items: center; justify-content: center; 
+    border-radius: 6px; 
+    background: rgba(0,0,0,.55); 
+    border: 1px solid rgba(255,255,255,.15); 
+    color: #fff; 
+}
+
+.attribution {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: var(--attribution-block-height, 28px);
+    display: flex; align-items: center; justify-content: flex-start; gap: 6px;
+    padding: 0 6px 0 6px;
+    background: #456;
+    color: #BCD;
+    border-bottom-left-radius: var(--poster-border-radius);
+    border-bottom-right-radius: var(--poster-border-radius);
+    font-family: GraphikWeb, -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif, ColorEmoji;
+    font-size: .92307692rem;
+   font-weight: 500;
+    z-index: 1;
+}
+
+.avatar {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    flex: 0 0 15px;
+    display: inline-block;
+    object-fit: cover;
+    margin: 0;
+}
+
+/* 7. Datos del rating (debajo del póster) */
+.poster-data {
+    margin: 4px 0 0 0;
+    font-family: GraphikWeb, -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif, ColorEmoji;
+
+    font-size: 12px;
+    color: var(--panel-content);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2px;
+}
+
+.rating {
+    color: #9ab; /* Letterboxd uses muted grey/blue */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.poster-data time {
+    margin-left: 8px;
+    opacity: 0.7; /* Más sutil */
+}
+/* Los nombres de las películas en las tarjetas de reviews
+  también usan la fuente de títulos.
+  Asegúrate de tener una clase para ellos.
+*/
+.movie-info h3 {
+    font-family: 'Tiempos Headline', serif;
+}
+
+/* Ajuste para separar icono (círculos) y texto del logo */
+.site-logo .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none; /* quitamos sprite completo */
+    width: auto;
+    height: auto;
+    text-indent: 110%;
+    text-indent: 0; /* mostrar texto */
+    white-space: nowrap;
+    overflow: visible;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    color: #dfe6eb; /* tono similar al logo original */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.site-logo .logo:before {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 40px;
+    background: url(https://s.ltrbxd.com/static/img/sprite-DzUy8pgb.svg) no-repeat;
+    background-size: 800px 1020px;
+    /* Posición aproximada de los tres círculos dentro del sprite */
+    background-position: 0 -800px;
+}
+.section-heading:not(.-spaced)+.poster-grid, .section-heading:not(.-spaced)+.all-link+.poster-grid, .filtered-message+.poster-grid, .poster-grid.-marginblockstart {
+    margin-block-start: var(--margin-block-start, var(--margin-top, var(--poster-grid-gap-row)));
+}
+.poster-grid {
+    --poster-grid-gap-column: 10px;
+    --poster-grid-gap-row: 10px;
+    --poster-grid-col-size: 150px;
+    position: relative;
+    z-index: 0;
+    container-type: inline-size;
+    container-name: grid;
+     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--poster-grid-col-size), 1fr));
+    gap: var(--poster-grid-gap-row, 10px) var(--poster-grid-gap-column, 10px);
+    
+}
+.poster-grid>.grid.-p70 {
+    --poster-grid-col-size: 70px;
+}
+.poster-grid>.grid.-autofit {
+    --poster-grid-template-columns: repeat(auto-fit, minmax(var(--poster-grid-col-size), 1fr));
+}
+.poster-grid>.grid {
+    display: grid;
+    -moz-column-gap: var(--poster-grid-gap-column);
+    column-gap: var(--poster-grid-gap-column);
+    row-gap: var(--poster-grid-gap-row);
+    grid-template-columns: var(--poster-grid-template-columns, repeat(auto-fill, var(--poster-grid-col-size)));
+}
+/* Ajuste de separación para MIX FEST como otras secciones */
+.poster-grid { --poster-grid-gap-column: 18px; --poster-grid-gap-row: 18px; }
+ol, ul {
+    list-style: none;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+/* Override generic UL reset for poster grids to remove left padding & bullets */
+.poster-grid > .grid {
+    list-style: none !important;
+    padding-inline-start: 0 !important;
+    margin: 0 !important;
+}
+
+/* ===== POPULAR REVIEWS THIS WEEK ===== */
+.review-tiles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    position: relative;
+
+}
+
+.review-tile {
+    background: #14181d;
+    border-radius: 4px;
+    overflow: hidden;
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    border-bottom: 1px solid #2C3440;
+}
+
+.review-tile .header {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    background: #14181d;
+}
+
+.review-tile .image {
+    flex-shrink: 0;
+}
+
+.review-tile .image img {
+    width: 70px;
+    height: 105px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.review-tile .details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.attribution-block {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.attribution-block .avatar {
+    flex-shrink: 0;
+}
+
+.attribution-block .avatar img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.attribution-block .displayname {
+    font-family: GraphikWeb, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', Meiryo, sans-serif, ColorEmoji;
+    color: #abc;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.inline-production-masthead {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.inline-production-masthead .name {
+    margin: 0;
+    font-family: TiemposHeadlineWeb, Georgia, serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.inline-production-masthead .name a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.inline-production-masthead .releasedate {
+    font-size: 14px;
+    color: #9ab;
+}
+
+.inline-production-masthead .releasedate a {
+    font-family: GraphikWeb, -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif, ColorEmoji;
+    color: #9ab;
+    text-decoration: none;
+}
+
+.content-reactions-strip {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.content-reactions-strip .rating {
+    color: #00c030;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.content-reactions-strip .icon-liked {
+    color: #ff8000;
+    font-size: 14px;
+}
+
+.content-reactions-strip .icon-comment {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: #9ab;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.review-tile .body {
+    padding: 0 12px 12px 12px;
+}
+
+.body-text {
+    color: #c5d1db;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.body-text p {
+    color: #9ab;
+    font-size: 15px;
+    font-family:  TiemposTextWeb, Georgia, serif, ColorEmoji;
+    margin: 0;
+}
+
+.review-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.like-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.like-link button {
+    background: none;
+    border: none;
+    color: #9ab;
+    cursor: pointer;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+}
+
+.like-link svg {
+    width: 15px;
+    height: 12px;
+}
+
+.like-link a {
+    color: #9ab;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.like-link a:hover {
+    color: #bcd;
+}
+
+.inlineicon {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.inlineicon .icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* ===== FOOTER ===== */
+.main-footer {
+    background: #2c3440;
+    padding: 40px 20px 30px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    color: #9ab;
+    font-weight: 700;
+    font-family: GraphikWeb, -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif, ColorEmoji;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav li {
+    margin: 0;
+}
+
+.footer-nav a {
+    color: #9ab;
+    font-family: GraphikWeb, -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif, ColorEmoji;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+    color: #9ab;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #678;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.social-icons a:hover {
+    color: #9ab;
+}
+
+.social-icons svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-text {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #678;
+    font-family: GraphikWeb, -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif, ColorEmoji;
+    font-size: .92307692rem;
+    line-height: 1.5;
+    padding-top: 20px;
+    border-top: 1px solid #445566;
+}
+
+.no-mobile .review-tiles {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.no-mobile .review-tiles>.review-tile {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    float: left;
+    width: 45.91836735%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 2.46153846rem;
+    padding-bottom: 1.53846154rem;
+    border-bottom: 1px solid #2C3440;
+}
+
+.review-tile>.header {
+    display: flex;
+    margin-bottom: 1px;
+    min-height: 114px;
+}
+.review-tile>.header>.image {
+    width: 75px;
+    flex-shrink: 0;
+    margin-right: 1.53846154rem;
+    align-self: flex-start;
+}
+.review-tile>.header>.details {
+    flex-grow: 1;
+    align-self: flex-end;
+}
+.attribution-block.-large {
+    --font-size: 1rem;
+    --avatar-dimension: 1.84615385rem;
+}
+.attribution-block>.avatar {
+    float: initial;
+    margin-right: initial;
+    border-radius: initial;
+    display: block;
+    grid-area: avatar;
+    width: var(--avatar-dimension);
+    height: var(--avatar-dimension);
+}
+.avatar.-a24 {
+    border-radius: 12px;
+}
+.attribution-block *, .attribution-block :after, .attribution-block :before {
+    box-sizing: inherit;
+}
+.avatar {
+    display: block;
+    position: relative;
+    float: left;
+    margin-right: 5px;
+    background-clip: padding-box;
+}
+a {
+    color: #678;
+    text-decoration: none;
+}
+.attribution-block>.avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.attribution-block:has(>.avatar)>.body {
+    grid-area: body;
+    margin-top: calc((var(--avatar-dimension) - (var(--font-size) * var(--body-line-height))) * .5);
+}
+.attribution-block>.body {
+    min-width: 0;
+    margin: 0;
+    line-height: var(--body-line-height);
+}
+.attribution-block *, .attribution-block :after, .attribution-block :before {
+    box-sizing: inherit;
+}
+.attribution-block.-constrain>.body>.attribution-detail {
+    margin-right: 0;
+}
+.attribution-block.-constrain .attribution-detail {
+    min-width: 0;
+    white-space: nowrap;
+    max-width: 100%;
+}
+attribution-block .attribution-detail {
+    line-height: var(--line-height);
+}
+.attribution-block *, .attribution-block :after, .attribution-block :before {
+    box-sizing: inherit;
+}
+.attribution-detail {
+    --item-gap: .5em;
+    --content-color: #678;
+    --content-link-color: #abc;
+    --content-link-hover-color: #bcd;
+    --context-content-color: var(--content-color);
+    --context-hover-content-color: #9ab;
+    --context-hover-display-name-content-color: var(--content-link-hover-color);
+    --owner-content-color: var(--content-link-color);
+    --owner-hover-content-color: var(--content-link-hover-color);
+    color: var(--content-color, currentColor);
+}
+attribution-block.-constrain .attribution-detail:not(.attribution-block.-constrain .attribution-detail:has(>.context)) .owner {
+    max-width: 100%;
+}
+.attribution-detail .owner {
+    --content-color: var(--owner-content-color);
+    display: inline-flex;
+    font-weight: var(--owner-font-weight, 700);
+    color: var(--content-color);
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+.attribution-block *, .attribution-block :after, .attribution-block :before {
+    box-sizing:
+     inherit;
+}
+.inline-production-masthead {
+    --primaryname-font-size: 1.69230769rem;
+    --secondaryname-font-size: 1.23076923rem;
+    --releasedate-font-size: 1.34615385rem;
+    --releasedate-secondary-font-size: 1.07692308rem;
+}
+.attribution-block.-constrain .attribution-detail:not(.attribution-block.-constrain .attribution-detail:has(>.context)) .owner>.displayname {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.review-tile>.header>.details>.attribution-block:first-child+* {
+    margin-block-start: var(--attribution-block-adjacent-block-margin);
+}
+.inline-production-masthead.-guttered {
+    --margin-block-end: .76923077rem;
+    margin-block-end: var(--margin-block-end);
+}
+.inline-production-masthead > span {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.inline-production-masthead .name.-primary {
+    font-family:  TiemposTextWeb, Georgia, serif, ColorEmoji;
+    font-weight: 700;
+    --font-size: var(--primaryname-font-size);
+    --line-height: 1.2;
+    display: inline;
+    margin: 0;
+}
+.inline-production-masthead .releasedate {
+    font-weight: 300;
+    color: var(--production-masthead-releasedate-content-color, #9ab);
+    margin-inline-start: .4em;
+    font-size: var(--releasedate-font-size);
+    display: inline;
+}
+.content-reactions-strip {
+    --item-gap: .5em;
+    --content-color: #678;
+    font-family: var(--font-stack-graphik);
+    font-weight: 400;
+    font-size: var(--font-size, .92307692rem);
+    line-height: 1.5;
+    white-space: nowrap;
+    color: var(--content-color, #678);
+}
+.rating.-green {
+    background-position: -450px -50px;
+}
+.content-reactions-strip .rating {
+    --offset-y: -.5px;
+}
+.content-reactions-strip .rating, .content-reactions-strip .policy-icon {
+    position: relative;
+    top: var(--offset-y, auto);
+    vertical-align: middle;
+}
+.content-reactions-strip>*:not(:last-child) {
+    margin-right: var(--item-gap);
+}
+.rated-8 {
+    width: 51px;
+}
+.rating {
+    display: inline-block;
+    height: 16px;
+    background: url(https://s.ltrbxd.com/static/img/sprite-DzUy8pgb.svg) no-repeat -290px -90px;
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.content-reactions-strip .icon-16.icon-liked {
+    --icon-offset-y: -1.5px;
+    --background-position-x: -390px;
+    --background-position-y: -90px;
+    --icon-width: 14px;
+    --icon-height: 13px;
+}
+.content-reactions-strip .inlineicon.-hidelabel {
+    --icon-label-gap: initial;
+}
+.content-reactions-strip .inlineicon:not(:last-child) {
+    margin-right: var(--item-gap);
+}
+.content-reactions-strip>*:not(:last-child) {
+    margin-right: var(--item-gap);
+}
+.content-reactions-strip .icon-16 {
+    height: initial;
+    position: relative;
+    font-size: inherit;
+    line-height: 1;
+    --icon-width: 16px;
+    --icon-height: 16px;
+}
+.content-reactions-strip .inlineicon {
+    color: var(--content-color, currentColor);
+    position: relative;
+    top: var(--offset-y, auto);
+    --icon-label-gap: .25em;
+    padding-left: calc(var(--icon-width) + var(--icon-label-gap, 0px));
+}
+.content-reactions-strip .inlineicon .icon {
+    width: var(--icon-width);
+    height: var(--icon-height);
+    top: 50%;
+    margin-top: calc((-.5 * var(--icon-height)) + var(--icon-offset-y, 0px));
+    background-position: var(--background-position-x) var(--background-position-y);
+}
+.content-reactions-strip .inlineicon.-hidelabel .label {
+    --dimension: 0;
+    display: inline-block;
+    width: var(--dimension);
+    height: var(--dimension);
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+.icon {
+    display: block;
+    background: url(https://s.ltrbxd.com/static/img/sprite-DzUy8pgb.svg) no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.content-reactions-strip .icon-16.icon-comment {
+    --background-position-x: -490px;
+    --background-position-y: -112px;
+    --icon-width: 13px;
+    --icon-height: 13px;
+}
+.review-tile>.body>.body-text {
+    overflow: hidden;
+}
+.body-text.-prose {
+    font-family: var(--font-stack-tiempos-text);
+    font-weight: 400;
+    --font-size: 1.15384615rem;
+    --line-height: 1.5;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+}
+.body-text {
+    color: #9ab;
+    font-size: 1.15384615rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+.viewing-actions, .list-actions {
+    --font-size: 2px;
+    --margin-block-start: 3px;
+    display: flex;
+    justify-content: space-between;
+    -moz-column-gap: 1em;
+    column-gap: 1em;
+    margin-block-start: var(--margin-block-start);
+    margin-block-end: var(--margin-block-end);
+    font-size: var(--font-size);
+    line-height: 1.5;
+}
+.review-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    -moz-column-gap: inherit;
+    column-gap: inherit;
+    row-gap: .5em;
+}
+.review-tile>.body .like-link-target {
+    margin-bottom: 0;
+    height: 18px;
+}
+.review-actions>.like-link-target {
+    margin-bottom: 0;
+    line-height: inherit;
+    margin-right: .5em;
+}
+p{
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+.like-link {
+    position: relative;
+    display: inline;
+}
