@@ -1,0 +1,26 @@
+{
+  "name": "one-piece-mugiwara",
+  "version": "1.0.0",
+  "description": "Perfil de la tripulación Sombreros de Paja usando Express + Handlebars",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "express",
+    "handlebars",
+    "one piece",
+    "mugiwara"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "hbs": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
