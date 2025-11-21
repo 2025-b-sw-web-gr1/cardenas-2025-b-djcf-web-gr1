@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Impacto de los Estándares Web - TechBlog</title>
+    <style>
+        /* Estilos básicos para visualizar la estructura */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Header principal del sitio */
+        .site-header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        .site-header nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        .site-header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .site-header a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Layout principal usando Grid para demostrar modernidad junto con semántica */
+        .container {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* Contenido principal */
+        main {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        article header {
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px;
+        }
+
+        article h1 {
+            color: #2c3e50;
+        }
+
+        .meta-info {
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        /* Barra lateral (Aside) */
+        aside {
+            background: #e8e8e8;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        /* Pie de página */
+        .site-footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER: Cabecera global del sitio o aplicación -->
+    <header class="site-header">
+        <nav aria-label="Navegación Principal">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Artículos</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- MAIN: Contenido principal y único del documento. 
+             No debe incluirse contenido que se repita en otras páginas (como sidebars o footers globales) -->
+        <main>
+            <!-- ARTICLE: Contenido independiente y autónomo. 
+                 Podría ser distribuido o reutilizado por sí solo (ej. en un feed RSS) -->
+            <article>
+                <header>
+                    <h1>La Importancia de la Semántica en la Web Moderna</h1>
+                    <p class="meta-info">
+                        Publicado por <a href="#" rel="author">Dome Cárd</a> 
+                    </p>
+                </header>
+
+                <!-- SECTION: Agrupación temática de contenido. Cada sección debería tener un encabezado. -->
+                <section>
+                    <h2>Introducción</h2>
+                    <p>La web ha evolucionado desde simples documentos de texto hasta complejas aplicaciones. En este contexto, el uso correcto de HTML5 no es solo una cuestión de estilo, sino de ingeniería.</p>
+                </section>
+
+                <section>
+                    <h2>¿Por qué usar etiquetas semánticas?</h2>
+                    <p>Las etiquetas como <code>&lt;article&gt;</code> y <code>&lt;section&gt;</code> proporcionan significado al contenido, no solo presentación.</p>
+                    
+                    <!-- FIGURE: Contenido ilustrativo referenciado desde el texto principal -->
+                    <figure>
+                        <img src="https://chucksacademy.com/api/proxy/uploads/Screenshot_2024_11_11_115852_c6fb7274ca.png" alt="Diagrama de estructura HTML5" style="max-width: 100%;">
+                        <figcaption>Fig 1. Comparación entre estructura div-soup y semántica HTML5.</figcaption>
+                    </figure>
+                </section>
+
+                <!-- FOOTER (dentro de article): Información sobre el artículo (autor, enlaces relacionados, etc.) -->
+                <footer>
+                    <p>Etiquetas: <a href="#">HTML5</a>, <a href="#">W3C</a>, <a href="#">Desarrollo Web</a></p>
+                </footer>
+            </article>
+        </main>
+
+        <!-- ASIDE: Contenido tangiblemente relacionado con el contenido principal, 
+             pero que puede separarse (barras laterales, publicidad, biografía del autor) -->
+        <aside>
+            <section>
+                <h3>Sobre el Autor</h3>
+                <p>Estudiante de la materia de Aplicaciones Web </p>
+            </section>
+            <nav aria-label="Artículos relacionados">
+                <h3>Leer más</h3>
+                <ul>
+                    <li><a href="#">Accesibilidad Web (WAI-ARIA)</a></li>
+                    <li><a href="#">CSS Grid vs Flexbox</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+
+    <!-- FOOTER: Pie de página global -->
+    <footer class="site-footer">
+        <p>&copy; 2025 Curso de Aplicaciones Web. Todos los derechos reservados.</p>
+        <address>
+            Contacto: <a href="mailto:contacto@epn.edu.ec">contacto@epn.edu.ec</a>
+        </address>
+    </footer>
+
+</body>
+</html>
