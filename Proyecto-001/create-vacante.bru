@@ -1,0 +1,27 @@
+meta {
+  name: Crear nueva vacante
+  type: http
+  seq: 8
+}
+
+post {
+  url: https://api.bolsatrabajo.com/vacantes
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "titulo": "Desarrollador Full Stack",
+    "descripcion": "Buscamos desarrollador con experiencia en Node.js y React. Responsable del desarrollo y mantenimiento de aplicaciones web.",
+    "salario": 1500.00,
+    "ubicacion": "Quito, Ecuador",
+    "modalidad": "Híbrido",
+    "empresaId": 1
+  }
+}

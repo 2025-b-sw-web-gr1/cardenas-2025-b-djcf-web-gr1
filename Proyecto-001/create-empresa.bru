@@ -1,0 +1,26 @@
+meta {
+  name: Crear nueva empresa
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://api.bolsatrabajo.com/empresas
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "nombre": "TechCorp S.A.",
+    "sector": "Tecnología",
+    "ubicacion": "Quito, Ecuador",
+    "sitioWeb": "https://techcorp.com",
+    "telefono": "+593-2-2345678"
+  }
+}

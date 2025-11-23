@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "API Bolsa de Trabajo",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

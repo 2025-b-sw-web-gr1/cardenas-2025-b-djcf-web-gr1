@@ -1,0 +1,27 @@
+meta {
+  name: Actualizar vacante completa
+  type: http
+  seq: 9
+}
+
+put {
+  url: https://api.bolsatrabajo.com/vacantes/1
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "titulo": "Desarrollador Full Stack Senior",
+    "descripcion": "Buscamos desarrollador senior con experiencia en Node.js, React y AWS. Liderará proyectos de desarrollo web.",
+    "salario": 2000.00,
+    "ubicacion": "Quito, Ecuador",
+    "modalidad": "Híbrido",
+    "empresaId": 1
+  }
+}

@@ -1,0 +1,533 @@
+openapi: 3.0.0
+info:
+  title: API de Bolsa de Trabajo - Empresas y Vacantes
+  description: |
+    API RESTful para la gestión de empresas y sus vacantes de trabajo.
+    Implementa una relación 1 a muchos donde una Empresa puede tener múltiples Vacantes.
+    
+    Desarrollado por:
+    - Doménica Cárdenas
+    - Isabella Hernández
+  version: 1.0.0
+  contact:
+    name: Equipo de Desarrollo
+servers:
+  - url: https://api.bolsatrabajo.com
+    description: Servidor de producción
+  - url: http://localhost:3000
+    description: Servidor de desarrollo local
+
+paths:
+  /empresas:
+    get:
+      summary: Obtener todas las empresas
+      description: Retorna una lista completa de todas las empresas registradas en el sistema
+      tags:
+        - Empresas
+      responses:
+        '200':
+          description: Lista de empresas obtenida exitosamente
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Empresa'
+              example:
+                - id: 1
+                  nombre: "TechCorp S.A."
+                  sector: "Tecnología"
+                  ubicacion: "Quito, Ecuador"
+                  sitioWeb: "https://techcorp.com"
+                  telefono: "+593-2-2345678"
+                - id: 2
+                  nombre: "Innovación Digital"
+                  sector: "Software"
+                  ubicacion: "Guayaquil, Ecuador"
+                  sitioWeb: "https://innovaciondigital.ec"
+                  telefono: "+593-4-3456789"
+        '500':
+          description: Error interno del servidor
+    
+    post:
+      summary: Crear nueva empresa
+      description: Registra una nueva empresa en el sistema de bolsa de trabajo
+      tags:
+        - Empresas
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EmpresaInput'
+            example:
+              nombre: "TechCorp S.A."
+              sector: "Tecnología"
+              ubicacion: "Quito, Ecuador"
+              sitioWeb: "https://techcorp.com"
+              telefono: "+593-2-2345678"
+      responses:
+        '201':
+          description: Empresa creada exitosamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Empresa'
+        '400':
+          description: Datos de entrada inválidos
+        '500':
+          description: Error interno del servidor
+
+  /empresas/{id}:
+    get:
+      summary: Obtener empresa por ID
+      description: Retorna los detalles de una empresa específica
+      tags:
+        - Empresas
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID único de la empresa
+          schema: 
+            type: integer
+            example: 1
+      responses:
+        '200':
+          description: Empresa encontrada
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Empresa'
+              example:
+                id: 1
+                nombre: "TechCorp S.A."
+                sector: "Tecnología"
+                ubicacion: "Quito, Ecuador"
+                sitioWeb: "https://techcorp.com"
+                telefono: "+593-2-2345678"
+        '404':
+          description: Empresa no encontrada
+        '500':
+          description: Error interno del servidor
+    
+    put:
+      summary: Actualizar empresa completa
+      description: Actualiza todos los datos de una empresa existente
+      tags:
+        - Empresas
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID único de la empresa
+          schema: 
+            type: integer
+            example: 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EmpresaInput'
+            example:
+              nombre: "TechCorp S.A. - Actualizado"
+              sector: "Tecnología e Innovación"
+              ubicacion: "Quito, Ecuador"
+              sitioWeb: "https://techcorp.com"
+              telefono: "+593-2-2345678"
+      responses:
+        '200':
+          description: Empresa actualizada exitosamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Empresa'
+        '400':
+          description: Datos de entrada inválidos
+        '404':
+          description: Empresa no encontrada
+        '500':
+          description: Error interno del servidor
+    
+    delete:
+      summary: Eliminar empresa
+      description: Elimina una empresa del sistema (también elimina todas sus vacantes asociadas)
+      tags:
+        - Empresas
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID único de la empresa
+          schema: 
+            type: integer
+            example: 1
+      responses:
+        '204':
+          description: Empresa eliminada exitosamente
+        '404':
+          description: Empresa no encontrada
+        '500':
+          description: Error interno del servidor
+
+  /vacantes:
+    get:
+      summary: Obtener todas las vacantes
+      description: Retorna una lista completa de todas las vacantes disponibles
+      tags:
+        - Vacantes
+      responses:
+        '200':
+          description: Lista de vacantes obtenida exitosamente
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Vacante'
+              example:
+                - id: 1
+                  titulo: "Desarrollador Full Stack"
+                  descripcion: "Buscamos desarrollador con experiencia en Node.js y React"
+                  salario: 1500.00
+                  ubicacion: "Quito, Ecuador"
+                  modalidad: "Híbrido"
+                  empresaId: 1
+                - id: 2
+                  titulo: "Diseñador UX/UI"
+                  descripcion: "Diseñador creativo para proyectos web y móviles"
+                  salario: 1200.00
+                  ubicacion: "Remoto"
+                  modalidad: "Remoto"
+                  empresaId: 1
+        '500':
+          description: Error interno del servidor
+    
+    post:
+      summary: Crear nueva vacante
+      description: Registra una nueva vacante de trabajo para una empresa
+      tags:
+        - Vacantes
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VacanteInput'
+            example:
+              titulo: "Desarrollador Full Stack"
+              descripcion: "Buscamos desarrollador con experiencia en Node.js y React"
+              salario: 1500.00
+              ubicacion: "Quito, Ecuador"
+              modalidad: "Híbrido"
+              empresaId: 1
+      responses:
+        '201':
+          description: Vacante creada exitosamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Vacante'
+        '400':
+          description: Datos de entrada inválidos
+        '404':
+          description: Empresa asociada no encontrada
+        '500':
+          description: Error interno del servidor
+
+  /vacantes/{id}:
+    get:
+      summary: Obtener vacante por ID
+      description: Retorna los detalles de una vacante específica
+      tags:
+        - Vacantes
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID único de la vacante
+          schema: 
+            type: integer
+            example: 1
+      responses:
+        '200':
+          description: Vacante encontrada
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Vacante'
+              example:
+                id: 1
+                titulo: "Desarrollador Full Stack"
+                descripcion: "Buscamos desarrollador con experiencia en Node.js y React"
+                salario: 1500.00
+                ubicacion: "Quito, Ecuador"
+                modalidad: "Híbrido"
+                empresaId: 1
+        '404':
+          description: Vacante no encontrada
+        '500':
+          description: Error interno del servidor
+    
+    put:
+      summary: Actualizar vacante completa
+      description: Actualiza todos los datos de una vacante existente
+      tags:
+        - Vacantes
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID único de la vacante
+          schema: 
+            type: integer
+            example: 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VacanteInput'
+            example:
+              titulo: "Desarrollador Full Stack Senior"
+              descripcion: "Buscamos desarrollador senior con experiencia en Node.js, React y AWS"
+              salario: 2000.00
+              ubicacion: "Quito, Ecuador"
+              modalidad: "Híbrido"
+              empresaId: 1
+      responses:
+        '200':
+          description: Vacante actualizada exitosamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Vacante'
+        '400':
+          description: Datos de entrada inválidos
+        '404':
+          description: Vacante no encontrada
+        '500':
+          description: Error interno del servidor
+    
+    delete:
+      summary: Eliminar vacante
+      description: Elimina una vacante del sistema
+      tags:
+        - Vacantes
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID único de la vacante
+          schema: 
+            type: integer
+            example: 1
+      responses:
+        '204':
+          description: Vacante eliminada exitosamente
+        '404':
+          description: Vacante no encontrada
+        '500':
+          description: Error interno del servidor
+
+  /empresas/{id}/vacantes:
+    get:
+      summary: Obtener vacantes de una empresa
+      description: Retorna todas las vacantes asociadas a una empresa específica
+      tags:
+        - Empresas
+        - Vacantes
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID único de la empresa
+          schema: 
+            type: integer
+            example: 1
+      responses:
+        '200':
+          description: Lista de vacantes de la empresa obtenida exitosamente
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Vacante'
+              example:
+                - id: 1
+                  titulo: "Desarrollador Full Stack"
+                  descripcion: "Buscamos desarrollador con experiencia en Node.js y React"
+                  salario: 1500.00
+                  ubicacion: "Quito, Ecuador"
+                  modalidad: "Híbrido"
+                  empresaId: 1
+                - id: 2
+                  titulo: "Diseñador UX/UI"
+                  descripcion: "Diseñador creativo para proyectos web y móviles"
+                  salario: 1200.00
+                  ubicacion: "Remoto"
+                  modalidad: "Remoto"
+                  empresaId: 1
+        '404':
+          description: Empresa no encontrada
+        '500':
+          description: Error interno del servidor
+
+components:
+  schemas:
+    Empresa:
+      type: object
+      properties:
+        id: 
+          type: integer
+          description: Identificador único de la empresa
+          example: 1
+        nombre: 
+          type: string
+          description: Nombre o razón social de la empresa
+          example: "TechCorp S.A."
+        sector: 
+          type: string
+          description: Sector o industria de la empresa
+          example: "Tecnología"
+        ubicacion: 
+          type: string
+          description: Ubicación física de la empresa
+          example: "Quito, Ecuador"
+        sitioWeb: 
+          type: string
+          description: URL del sitio web corporativo
+          example: "https://techcorp.com"
+        telefono: 
+          type: string
+          description: Número de contacto de la empresa
+          example: "+593-2-2345678"
+      required:
+        - id
+        - nombre
+        - sector
+        - ubicacion
+
+    EmpresaInput:
+      type: object
+      properties:
+        nombre: 
+          type: string
+          description: Nombre o razón social de la empresa
+          minLength: 3
+          maxLength: 200
+          example: "TechCorp S.A."
+        sector: 
+          type: string
+          description: Sector o industria de la empresa
+          minLength: 3
+          maxLength: 100
+          example: "Tecnología"
+        ubicacion: 
+          type: string
+          description: Ubicación física de la empresa
+          minLength: 3
+          maxLength: 200
+          example: "Quito, Ecuador"
+        sitioWeb: 
+          type: string
+          description: URL del sitio web corporativo
+          format: uri
+          example: "https://techcorp.com"
+        telefono: 
+          type: string
+          description: Número de contacto de la empresa
+          pattern: '^\+?[0-9\-\s]+$'
+          example: "+593-2-2345678"
+      required:
+        - nombre
+        - sector
+        - ubicacion
+
+    Vacante:
+      type: object
+      properties:
+        id: 
+          type: integer
+          description: Identificador único de la vacante
+          example: 1
+        titulo: 
+          type: string
+          description: Título del puesto de trabajo
+          example: "Desarrollador Full Stack"
+        descripcion: 
+          type: string
+          description: Descripción detallada de la vacante y requisitos
+          example: "Buscamos desarrollador con experiencia en Node.js y React"
+        salario: 
+          type: number
+          format: float
+          description: Salario ofrecido (en USD)
+          example: 1500.00
+        ubicacion: 
+          type: string
+          description: Ubicación del puesto de trabajo
+          example: "Quito, Ecuador"
+        modalidad: 
+          type: string
+          description: Modalidad de trabajo
+          enum: [Presencial, Remoto, Híbrido]
+          example: "Híbrido"
+        empresaId: 
+          type: integer
+          description: ID de la empresa que ofrece la vacante
+          example: 1
+      required:
+        - id
+        - titulo
+        - descripcion
+        - empresaId
+
+    VacanteInput:
+      type: object
+      properties:
+        titulo: 
+          type: string
+          description: Título del puesto de trabajo
+          minLength: 5
+          maxLength: 200
+          example: "Desarrollador Full Stack"
+        descripcion: 
+          type: string
+          description: Descripción detallada de la vacante y requisitos
+          minLength: 10
+          maxLength: 2000
+          example: "Buscamos desarrollador con experiencia en Node.js y React"
+        salario: 
+          type: number
+          format: float
+          description: Salario ofrecido (en USD)
+          minimum: 0
+          example: 1500.00
+        ubicacion: 
+          type: string
+          description: Ubicación del puesto de trabajo
+          minLength: 3
+          maxLength: 200
+          example: "Quito, Ecuador"
+        modalidad: 
+          type: string
+          description: Modalidad de trabajo
+          enum: [Presencial, Remoto, Híbrido]
+          example: "Híbrido"
+        empresaId: 
+          type: integer
+          description: ID de la empresa que ofrece la vacante
+          example: 1
+      required:
+        - titulo
+        - descripcion
+        - empresaId
+
+tags:
+  - name: Empresas
+    description: Operaciones relacionadas con la gestión de empresas
+  - name: Vacantes
+    description: Operaciones relacionadas con la gestión de vacantes de trabajo

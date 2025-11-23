@@ -1,0 +1,26 @@
+meta {
+  name: Actualizar empresa completa
+  type: http
+  seq: 4
+}
+
+put {
+  url: https://api.bolsatrabajo.com/empresas/1
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "nombre": "TechCorp S.A. - Actualizado",
+    "sector": "Tecnología e Innovación",
+    "ubicacion": "Quito, Ecuador",
+    "sitioWeb": "https://techcorp.com",
+    "telefono": "+593-2-2345678"
+  }
+}
