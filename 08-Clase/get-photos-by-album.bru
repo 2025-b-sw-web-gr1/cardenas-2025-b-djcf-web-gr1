@@ -1,0 +1,15 @@
+meta {
+  name: Obtener fotos por álbum
+  type: http
+  seq: 14
+}
+
+get {
+  url: https://jsonplaceholder.typicode.com/photos?albumId=1
+  body: none
+  auth: none
+}
+
+params:query {
+  albumId: 1
+}

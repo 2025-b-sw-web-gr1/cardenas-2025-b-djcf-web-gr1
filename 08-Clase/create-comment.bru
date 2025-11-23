@@ -1,0 +1,24 @@
+meta {
+  name: Crear nuevo comentario
+  type: http
+  seq: 9
+}
+
+post {
+  url: https://jsonplaceholder.typicode.com/comments
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "test",
+    "email": "test@example.com",
+    "body": "Nice!",
+    "postId": 1
+  }
+}

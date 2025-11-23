@@ -1,0 +1,7 @@
+# Bruno
+# No se necesita ignorar archivos ya que Bruno es Git-friendly
+# Los archivos .bru están diseñados para ser versionados
+
+# Sin embargo, puedes ignorar archivos de configuración local si los tienes:
+# .env
+# bruno-secrets.json

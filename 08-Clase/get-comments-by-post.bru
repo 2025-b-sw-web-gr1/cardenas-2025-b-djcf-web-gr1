@@ -1,0 +1,15 @@
+meta {
+  name: Obtener comentarios por post
+  type: http
+  seq: 8
+}
+
+get {
+  url: https://jsonplaceholder.typicode.com/comments?postId=1
+  body: none
+  auth: none
+}
+
+params:query {
+  postId: 1
+}

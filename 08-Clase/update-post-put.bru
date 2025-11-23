@@ -1,0 +1,24 @@
+meta {
+  name: Actualizar post completo
+  type: http
+  seq: 4
+}
+
+put {
+  url: https://jsonplaceholder.typicode.com/posts/1
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "id": 1,
+    "title": "foo",
+    "body": "bar",
+    "userId": 1
+  }
+}
