@@ -1,0 +1,23 @@
+meta {
+  name: Crear receta
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/recetas
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nombre:" {{nombre}},
+    "descripcion:" {{descripcionReceta}}
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
